@@ -1,0 +1,253 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Chloé Semaan</title>
+<meta name="description" content="Chloé Semaan — Master's student in Economics, Data Analytics and Corporate Finance at École Polytechnique.">
+<meta property="og:title" content="Chloé Semaan">
+<meta property="og:description" content="Economics, data analytics and corporate finance — École Polytechnique.">
+<style>
+  :root { --bg:#faf8f5; --fg:#1f1b19; --muted:#6a625c; --accent:#b8432b; --card:#fff; --line:#e7e0d8; }
+  @media (prefers-color-scheme: dark) {
+    :root { --bg:#151211; --fg:#f2ece5; --muted:#a29890; --accent:#e8836a; --card:#1f1b19; --line:#322c29; }
+  }
+  * { box-sizing:border-box; }
+  html { scroll-behavior:smooth; }
+  body { margin:0; background:var(--bg); color:var(--fg); font:17px/1.65 Georgia,"Times New Roman",serif; }
+  h1,h2,h3,nav,button,.btn,.tag,.meta,.eyebrow { font-family:-apple-system,"Segoe UI",Helvetica,Arial,sans-serif; }
+  a { color:var(--accent); }
+  .wrap { max-width:900px; margin:0 auto; padding:0 16px; }
+  header { position:sticky; top:0; z-index:10; background:color-mix(in srgb,var(--bg) 88%,transparent); backdrop-filter:blur(8px); border-bottom:1px solid var(--line); }
+  header .wrap { display:flex; align-items:center; justify-content:space-between; height:60px; }
+  .logo { font-family:-apple-system,"Segoe UI",sans-serif; font-weight:700; color:var(--fg); text-decoration:none; }
+  nav { display:flex; align-items:center; gap:20px; font-size:.92rem; }
+  nav a { color:var(--muted); text-decoration:none; }
+  nav a:hover { color:var(--fg); }
+  .lang { display:inline-flex; border:1px solid var(--line); border-radius:999px; overflow:hidden; }
+  .lang button { border:0; background:none; color:var(--muted); padding:5px 12px; cursor:pointer; font-size:.82rem; font-weight:600; }
+  .lang button[aria-pressed="true"] { background:var(--accent); color:#fff; }
+  .hero { padding:88px 0 64px; }
+  .eyebrow { color:var(--accent); text-transform:uppercase; letter-spacing:.12em; font-size:.78rem; font-weight:600; }
+  h1 { font-size:clamp(2.4rem,7vw,4rem); line-height:1.05; margin:12px 0 18px; letter-spacing:-.02em; }
+  .hero p { max-width:600px; color:var(--muted); font-size:1.12rem; margin:0 0 8px; }
+  .btns { display:flex; flex-wrap:wrap; gap:10px; margin-top:20px; }
+  .btn { display:inline-block; padding:11px 22px; border-radius:999px; text-decoration:none; font-weight:600; font-size:.95rem; background:var(--accent); color:#fff; }
+  .btn.alt { background:none; color:var(--fg); border:1px solid var(--line); }
+  section { padding:60px 0; border-top:1px solid var(--line); }
+  h2 { font-size:1.7rem; margin:0 0 24px; letter-spacing:-.01em; }
+  .about p { max-width:680px; margin:0 0 14px; }
+  .tags { display:flex; flex-wrap:wrap; gap:8px; margin-top:8px; }
+  .tag { font-size:.82rem; padding:4px 12px; border:1px solid var(--line); border-radius:999px; background:var(--card); color:var(--muted); }
+  .item { display:grid; grid-template-columns:130px 1fr; gap:8px 24px; padding:22px 0; border-bottom:1px solid var(--line); }
+  .item:last-child { border-bottom:0; }
+  .when { font-family:-apple-system,"Segoe UI",sans-serif; font-size:.85rem; color:var(--muted); padding-top:4px; }
+  .item h3 { margin:0; font-size:1.05rem; }
+  .meta { color:var(--accent); font-size:.9rem; margin:2px 0 8px; }
+  .item p { margin:0 0 6px; color:var(--muted); font-size:.97rem; }
+  .item ul { margin:6px 0 0; padding-left:18px; color:var(--muted); font-size:.97rem; }
+  .item li { margin-bottom:4px; }
+  .grid { display:grid; gap:16px; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); }
+  .card { background:var(--card); border:1px solid var(--line); border-radius:14px; padding:22px; }
+  .card h3 { margin:0 0 10px; font-size:1rem; }
+  .card p { margin:0; color:var(--muted); font-size:.95rem; }
+  footer { padding:28px 0 44px; color:var(--muted); font-size:.88rem; border-top:1px solid var(--line); font-family:-apple-system,"Segoe UI",sans-serif; }
+  @media (max-width:600px) { nav .links { display:none; } .hero { padding:52px 0 44px; } .item { grid-template-columns:1fr; gap:0; } }
+</style>
+</head>
+<body>
+<header><div class="wrap">
+  <a class="logo" href="#top">Chloé Semaan</a>
+  <nav>
+    <span class="links" style="display:flex;gap:20px">
+      <a href="#about" data-i18n="nav_about"></a>
+      <a href="#experience" data-i18n="nav_exp"></a>
+      <a href="#education" data-i18n="nav_edu"></a>
+      <a href="#contact" data-i18n="nav_contact"></a>
+    </span>
+    <div class="lang" role="group" aria-label="Language / Langue">
+      <button data-lang="en" aria-pressed="true">EN</button>
+      <button data-lang="fr" aria-pressed="false">FR</button>
+    </div>
+  </nav>
+</div></header>
+
+<main id="top">
+  <div class="wrap hero">
+    <div class="eyebrow" data-i18n="hero_eyebrow"></div>
+    <h1>Chloé Semaan</h1>
+    <p data-i18n="hero_text"></p>
+    <p data-i18n="hero_seek"></p>
+    <div class="btns">
+      <a class="btn" href="mailto:chloesemaan.pro@gmail.com" data-i18n="cta_contact"></a>
+      <a class="btn alt" href="https://github.com/chloe-semaan">GitHub</a>
+    </div>
+  </div>
+
+  <section id="about"><div class="wrap about">
+    <h2 data-i18n="about_title"></h2>
+    <p data-i18n="about_p1"></p>
+    <p data-i18n="about_p2"></p>
+    <div class="tags">
+      <span class="tag">Python</span><span class="tag">SQL</span><span class="tag">R</span><span class="tag">C++</span><span class="tag">VBA</span>
+      <span class="tag">Tableau</span><span class="tag">Power BI</span><span class="tag">DBT</span><span class="tag">Snowflake</span>
+      <span class="tag">LaTeX</span><span class="tag" data-i18n="tag_onchain"></span><span class="tag" data-i18n="tag_fm"></span><span class="tag" data-i18n="tag_econ"></span>
+    </div>
+  </div></section>
+
+  <section id="experience"><div class="wrap">
+    <h2 data-i18n="exp_title"></h2>
+
+    <div class="item"><div class="when" data-i18n="e0_when"></div><div>
+      <h3 data-i18n="e0_role"></h3><div class="meta">CREST · Palaiseau</div>
+      <p data-i18n="e0_d"></p></div></div>
+
+    <div class="item"><div class="when">2025</div><div>
+      <h3 data-i18n="e1_role"></h3><div class="meta">Lobster Protocol · Paris</div>
+      <p data-i18n="e1_d"></p>
+      <ul><li data-i18n="e1_b1"></li><li data-i18n="e1_b2"></li><li data-i18n="e1_b3"></li></ul></div></div>
+
+    <div class="item"><div class="when">2023 – 2024</div><div>
+      <h3 data-i18n="e2_role"></h3><div class="meta">S.R. Investment Partners · Paris</div>
+      <p data-i18n="e2_d"></p></div></div>
+
+    <div class="item"><div class="when">2021 – 2023</div><div>
+      <h3 data-i18n="e3_role"></h3><div class="meta">ATKA · Paris</div>
+      <p data-i18n="e3_d"></p>
+      <ul><li data-i18n="e3_b1"></li><li data-i18n="e3_b2"></li><li data-i18n="e3_b3"></li></ul></div></div>
+
+    <div class="item"><div class="when">2021</div><div>
+      <h3 data-i18n="e4_role"></h3><div class="meta">ATKA · Paris</div>
+      <p data-i18n="e4_d"></p></div></div>
+
+    <div class="item"><div class="when">2021</div><div>
+      <h3 data-i18n="e5_role"></h3><div class="meta">CREST (CNRS) · Palaiseau</div>
+      <p data-i18n="e5_d"></p></div></div>
+
+    <div class="item"><div class="when">2022 – 2023</div><div>
+      <h3 data-i18n="e6_role"></h3><div class="meta">Women in Web3 · Paris</div>
+      <p data-i18n="e6_d"></p></div></div>
+  </div></section>
+
+  <section id="education"><div class="wrap">
+    <h2 data-i18n="edu_title"></h2>
+    <div class="grid">
+      <div class="card"><div class="when">2026 – 2028</div><h3>École Polytechnique</h3>
+        <p data-i18n="ed1_d"></p></div>
+      <div class="card"><div class="when">2018 – 2021</div><h3>École Polytechnique</h3>
+        <p data-i18n="ed2_d"></p></div>
+      <div class="card"><div class="when" data-i18n="lang_title"></div><h3 data-i18n="lang_h"></h3>
+        <p data-i18n="lang_d"></p></div>
+    </div>
+  </div></section>
+
+  <section id="contact"><div class="wrap">
+    <h2 data-i18n="contact_title"></h2>
+    <p style="max-width:560px;color:var(--muted)" data-i18n="contact_text"></p>
+    <div class="btns">
+      <a class="btn" href="mailto:chloesemaan.pro@gmail.com">chloesemaan.pro@gmail.com</a>
+      <a class="btn alt" href="https://github.com/chloe-semaan">GitHub</a>
+    </div>
+  </div></section>
+</main>
+
+<footer><div class="wrap">© <span id="yr"></span> Chloé Semaan · Paris</div></footer>
+
+<script>
+const T = {
+ en: {
+  nav_about:"About", nav_exp:"Experience", nav_edu:"Education", nav_contact:"Contact",
+  hero_eyebrow:"Economics · Data · Finance",
+  hero_text:"Master's student in Economics, Data Analytics and Corporate Finance at École Polytechnique, applying data, economics and quantitative methods to complex business and financial challenges.",
+  hero_seek:"Seeking an internship from March to August 2027.",
+  cta_contact:"Get in touch",
+  about_title:"About",
+  about_p1:"My background spans data analytics, financial markets, blockchain and research, where I turn complex datasets into actionable insights. I work with Python, SQL, Tableau, Power BI, DBT, Snowflake and on-chain analytics, and I research digital assets and emerging technologies.",
+  about_p2:"I'm particularly interested in quantitative finance, economic analysis, business intelligence, data science and AI-driven decision-making. Through my Master's I aim to deepen my expertise in econometrics, machine learning, corporate finance and advanced analytics, building solutions that bridge technical innovation and real-world business strategy.",
+  tag_onchain:"On-chain analytics", tag_fm:"Financial modeling", tag_econ:"Econometrics",
+  exp_title:"Experience",
+  e0_when:"Sep 2026 – Present", e0_role:"Research Assistant",
+  e0_d:"Working with Professor Julien Prat on the economics of AI token pricing: price formation and transparency in LLM APIs, the dispersion in cost of equivalent tasks, and the energy consumption behind AI workloads.",
+  e1_role:"Chief Research Officer (CRO)",
+  e1_d:"Liquidity pool optimiser protocol, backed by 50 partners and angel investors including the co-founders of Ledger and Talend.",
+  e1_b1:"Developed and maintained financial models and algorithms for decentralised finance strategies, including reconciliation of liquidity pool data across multiple blockchains.",
+  e1_b2:"Improved algorithm model performance by ~30%.",
+  e1_b3:"Worked with engineering teams to build data pipelines for clear reporting of KPIs and protocol metrics.",
+  e2_role:"Senior Data Analyst, Financial Markets",
+  e2_d:"Conducted detailed market analysis to support investment strategies, including monthly and quarterly performance reports.",
+  e3_role:"Head of Research and Development",
+  e3_d:"Consulting firm specialising in incubation and fundraising for Web3 startups: 15+ companies advised and €35m facilitated in client fundraising.",
+  e3_b1:"Designed and improved valuation models for crypto-assets (Bitcoin, Ethereum, NFTs) using VAR, Granger causality, hedonic models, OLS and GARCH.",
+  e3_b2:"Advised clients on valuation, financial structuring and fundraising, including token issuance and crypto-asset structuring.",
+  e3_b3:"Collaborated with leading DeFi protocols including Mangrove and Morpho on applied research, valuation and market mechanism analysis.",
+  e4_role:"Research Analyst (Internship)",
+  e4_d:"Redesigned traditional models for cryptocurrencies and wrote a research paper on Bitcoin valuation.",
+  e5_role:"Researcher Intern (End of Studies)",
+  e5_d:"Thesis on market makers, focusing on competition among automated market makers (AMMs).",
+  e6_role:"Newsletter and Technical Content Writer (Volunteer)",
+  e6_d:"Community organisation supporting women in blockchain and digital assets. Co-wrote the bi-monthly newsletter and set up speaking engagements and collaborations across DeFi and blockchain.",
+  edu_title:"Education & languages",
+  ed1_d:"Master of Science and Technology in Economics, Data Analytics and Corporate Finance. M&A, Corporate Finance, Private Equity, Microeconomics, Econometrics.",
+  ed2_d:"Bachelor of Science, double major in Mathematics and Economics. Industrial Organisation, Macroeconomics, Probability, Statistics, Game Theory, Optimisation.",
+  lang_title:"Languages", lang_h:"Speaks",
+  lang_d:"Arabic (native) · English (bilingual) · French (bilingual) · Mandarin (beginner) · Italian (beginner)",
+  contact_title:"Contact",
+  contact_text:"Always open to connecting with professionals, researchers and organisations working at the intersection of economics, finance, data and technology. Research papers available on request.",
+  title:"Chloé Semaan — Economics, Data & Finance"
+ },
+ fr: {
+  nav_about:"À propos", nav_exp:"Expérience", nav_edu:"Formation", nav_contact:"Contact",
+  hero_eyebrow:"Économie · Data · Finance",
+  hero_text:"Étudiante en Master Économie, Data Analytics et Finance d'entreprise à l'École Polytechnique, j'applique la data, l'économie et les méthodes quantitatives à des enjeux business et financiers complexes.",
+  hero_seek:"À la recherche d'un stage de mars à août 2027.",
+  cta_contact:"Me contacter",
+  about_title:"À propos",
+  about_p1:"Mon parcours couvre l'analyse de données, les marchés financiers, la blockchain et la recherche : je transforme des jeux de données complexes en décisions concrètes. Je travaille avec Python, SQL, Tableau, Power BI, DBT, Snowflake et l'analyse on-chain, et je mène des recherches sur les actifs numériques et les technologies émergentes.",
+  about_p2:"Je m'intéresse particulièrement à la finance quantitative, à l'analyse économique, à la business intelligence, à la data science et à la décision assistée par l'IA. Avec mon Master, je veux approfondir l'économétrie, le machine learning, la finance d'entreprise et l'analytique avancée, pour construire des solutions qui relient innovation technique et stratégie business.",
+  tag_onchain:"Analyse on-chain", tag_fm:"Modélisation financière", tag_econ:"Économétrie",
+  exp_title:"Expérience",
+  e0_when:"Sept. 2026 – Aujourd'hui", e0_role:"Assistante de recherche",
+  e0_d:"Auprès du Professeur Julien Prat sur l'économie de la tarification des tokens d'IA : formation et transparence des prix des API de LLM, dispersion du coût de tâches équivalentes et consommation énergétique des charges de travail IA.",
+  e1_role:"Chief Research Officer (CRO)",
+  e1_d:"Protocole d'optimisation de pools de liquidité, soutenu par 50 partenaires et business angels dont les cofondateurs de Ledger et Talend.",
+  e1_b1:"Développement et maintenance de modèles financiers et d'algorithmes pour des stratégies de finance décentralisée, dont la réconciliation des données de pools de liquidité sur plusieurs blockchains.",
+  e1_b2:"Amélioration d'environ 30 % de la performance des modèles algorithmiques.",
+  e1_b3:"Collaboration avec les équipes d'ingénierie pour construire des pipelines de données et un reporting clair des KPI du protocole.",
+  e2_role:"Senior Data Analyst, marchés financiers",
+  e2_d:"Analyses de marché détaillées à l'appui des stratégies d'investissement, dont les rapports de performance mensuels et trimestriels.",
+  e3_role:"Responsable Recherche et Développement",
+  e3_d:"Cabinet de conseil spécialisé dans l'incubation et la levée de fonds de startups Web3 : plus de 15 entreprises conseillées et 35 M€ levés pour les clients.",
+  e3_b1:"Conception et amélioration de modèles de valorisation de crypto-actifs (Bitcoin, Ethereum, NFT) par VAR, causalité de Granger, modèles hédoniques, MCO et GARCH.",
+  e3_b2:"Conseil en valorisation, structuration financière et levée de fonds, dont l'émission de tokens et la structuration de crypto-actifs.",
+  e3_b3:"Collaboration avec des protocoles DeFi de premier plan, dont Mangrove et Morpho, en recherche appliquée, valorisation et analyse des mécanismes de marché.",
+  e4_role:"Analyste recherche (stage)",
+  e4_d:"Refonte de modèles traditionnels pour les cryptomonnaies et rédaction d'un article de recherche sur la valorisation du Bitcoin.",
+  e5_role:"Chercheuse stagiaire (stage de fin d'études)",
+  e5_d:"Mémoire sur les teneurs de marché, centré sur la concurrence entre automated market makers (AMM).",
+  e6_role:"Rédactrice de newsletter et de contenus techniques (bénévole)",
+  e6_d:"Communauté qui soutient les femmes dans la blockchain et les actifs numériques. Coécriture de la newsletter bimensuelle, organisation d'interventions et de collaborations dans la DeFi et la blockchain.",
+  edu_title:"Formation & langues",
+  ed1_d:"Master of Science and Technology en Économie, Data Analytics et Finance d'entreprise. M&A, finance d'entreprise, private equity, microéconomie, économétrie.",
+  ed2_d:"Bachelor of Science, double majeure Mathématiques et Économie. Organisation industrielle, macroéconomie, probabilités, statistiques, théorie des jeux, optimisation.",
+  lang_title:"Langues", lang_h:"Langues parlées",
+  lang_d:"Arabe (langue maternelle) · Anglais (bilingue) · Français (bilingue) · Mandarin (débutant) · Italien (débutant)",
+  contact_title:"Contact",
+  contact_text:"Toujours ravie d'échanger avec des professionnels, chercheurs et organisations à l'intersection de l'économie, de la finance, de la data et de la technologie. Articles de recherche disponibles sur demande.",
+  title:"Chloé Semaan — Économie, Data & Finance"
+ }
+};
+function setLang(l){
+  const d=T[l];
+  document.documentElement.lang=l;
+  document.querySelectorAll("[data-i18n]").forEach(e=>e.textContent=d[e.dataset.i18n]);
+  document.querySelectorAll(".lang button").forEach(b=>b.setAttribute("aria-pressed",b.dataset.lang===l));
+  document.title=d.title;
+  try{localStorage.setItem("lang",l)}catch(e){}
+}
+document.querySelectorAll(".lang button").forEach(b=>b.addEventListener("click",()=>setLang(b.dataset.lang)));
+document.getElementById("yr").textContent=new Date().getFullYear();
+let s=null; try{s=localStorage.getItem("lang")}catch(e){}
+setLang(s||((navigator.language||"en").toLowerCase().startsWith("fr")?"fr":"en"));
+</script>
+</body>
+</html>
